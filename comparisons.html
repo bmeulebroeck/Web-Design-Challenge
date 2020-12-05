@@ -18,7 +18,7 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -44,12 +44,37 @@
                 </nav>
             </div>
         </div>
+        <!-- Begin Main Content Section -->
+
         <div class="row">
-            <div class="col-md-12" id="main_content">
-                <img src="visualizations/tempvlat.png" alt="temp vs lat visual">
-                <p>This page will compare all the figures in one view</p>
+          <div class="col-md-12" id="title">
+              <br>
+              <h3>Comparisons: Latitude vs. X</h3>
+          </div>
+        </div>
+        <hr color="#010101">
+        <div class ="row">
+            <div class="col-md-6" id="comp-boxes">
+              <h5>vs. Temperature:</h5>
+              <a href="temp.html"><img id="content-img" src="resources/images/tempvlat.png" alt="temp vs lat visual"></a>
+            </div>
+            <div class="col-md-6" id="comp-boxes">
+              <h5>vs. Humidity:</h5>
+              <a href="humidity.html"><img id="content-img" src="resources/images/humidvlat.png" alt="humidity vs lat visual"></a>
+          </div>
+        </div>
+        <div class ="row">
+            <div class="col-md-6" id="comp-boxes">
+              <h5>vs. Cloudiness:</h5>
+              <a href="clouds.html"><img id="content-img" src="resources/images/cloudsvlat.png" alt="cloudiness vs lat visual"></a>
+            </div>
+            <div class="col-md-6" id="comp-boxes">
+              <h5>vs. Wind Speed:</h5>
+              <a href="windspeed.html"><img id="content-img" src="resources/images/windvlat.png" alt="windspeed vs lat visual"></a>
             </div>
         </div>
+
+      <!-- End Main Content Section -->
         <div class="row">
             <div class="col-md-12">
                 <hr color="#010101">

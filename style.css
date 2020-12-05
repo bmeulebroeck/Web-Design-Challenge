@@ -1,0 +1,29 @@
+.container {
+    width: 1024px;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+h3 {
+    color: darkgreen;
+}
+
+h5 {
+    color: darkgreen;
+}
+
+#content-img {
+    float: left;
+    padding: 5px;
+}
+
+#summarytxt {
+    float: left;
+    padding: 5px;
+}
+
+#comp-boxes {
+    text-align: center;
+}

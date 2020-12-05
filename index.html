@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Weather Analysis: Latitude vs X</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,12 +14,12 @@
         <div class="row">
             <div class="col-md-12" id="navbar">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Latitude vs. X:</a>
+                    <a class="navbar-brand" href="index.html">Latitude vs. X:</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -44,12 +45,32 @@
                 </nav>
             </div>
         </div>
+
+        <!-- Begin Main Content Section -->
+
         <div class="row">
-            <div class="col-md-12" id="main_content">
-                <img src="visualizations/tempvlat.png" alt="temp vs lat visual">
-                <p>Write a summary here</p>
+            <div class="col-md-12" id="title">
+                <br>
+                <h1>Weather Analysis Project: Latitude vs. X</h1>
             </div>
         </div>
+        <div class ="row">
+            <div class="col-md-8" id="main-content">
+                <img id="content-img" src="resources/images/temp_summpg.png" alt="temp vs lat visual">
+                <p class="text-md-left">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 randomly selected cities.</p>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, humidity, and windspeed. This site provides the source data and visualizations created as part of the analysis, as well as explanations of any trends or correlations witnessed.</p>
+            </div>
+            <div class="col-md-4" id="summ-sidebar">
+                <p>See The Plots:</p>
+                <a href="temp.html"><img id="temp_th" src="resources/images/tempvlat_th.png" alt="temp fig thumbnail"></a>
+                <a href="clouds.html"><img id="clouds_th" src="resources/images/cloudsvlat_th.png" alt="clouds fig thumbnail"></a>
+                <a href="humidity.html"><img id="humidity_th" src="resources/images/humidvlat_th.png" alt="humidity fig thumbnail"></a>
+                <a href="windspeed.html"><img id="windspeed_th" src="resources/images/windvlat_th.png" alt="windspeed fig thumbnail"></a>
+            </div>
+        </div>
+
+        <!-- End Main Content Section -->
+
         <div class="row">
             <div class="col-md-12">
                 <hr color="#010101">

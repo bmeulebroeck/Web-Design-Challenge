@@ -18,11 +18,11 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                           </a>
@@ -44,12 +44,23 @@
                 </nav>
             </div>
         </div>
+        <!-- Begin Main Content Section -->
+
         <div class="row">
-            <div class="col-md-12" id="main_content">
-                <img src="visualizations/tempvlat.png" alt="temp vs lat visual">
-                <p>This is where the temperature content will go</p>
+          <div class="col-md-12" id="title">
+              <br>
+              <h3>Latitude vs. Temperature</h3>
+          </div>
+        </div>
+        <div class ="row">
+            <div class="col-md-12" id="main-content">
+                <img id="content-img" src="resources/images/tempvlat.png" alt="temp vs lat visual">
+                <p class="text-md-left">This scatter plot represents the max temp reading for all cities queried vs. latitude.</p>
+                <p>As expected, temperatures near the equator (0 latitude) are warmer than the higher and lower latitudes. There are also more cooler temps in the upper latitudes (40 to 80) which is to be expected as the northern hemisphere was in autumn v. summer in the southern hemisphere. (Data collected on 10/30/2020)</p>
             </div>
         </div>
+
+      <!-- End Main Content Section -->
         <div class="row">
             <div class="col-md-12">
                 <hr color="#010101">

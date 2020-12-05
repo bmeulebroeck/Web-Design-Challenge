@@ -18,11 +18,11 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                           </a>
@@ -44,12 +44,23 @@
                 </nav>
             </div>
         </div>
+        <!-- Begin Main Content Section -->
+
         <div class="row">
-            <div class="col-md-12" id="main_content">
-                <img src="visualizations/humidvlat.png" alt="humid vs lat visual">
-                <p>This is where the humidity content will go</p>
+          <div class="col-md-12" id="title">
+              <br>
+              <h3>Latitude vs. Humidity</h3>
+          </div>
+        </div>
+        <div class ="row">
+            <div class="col-md-12" id="main-content">
+                <img id="content-img" src="resources/images/humidvlat.png" alt="humidity vs lat visual">
+                <p class="text-md-left">This scatter plot represents the max humidity reading for all cities queried vs. latitude.</p>
+                <p>Humidity is generally on the high end (above 60). There are more data points in the 40-80 latitude range but that may be due to there being more cities in the North v South hemisphere. (Data collected on 10/30/2020)</p>
             </div>
         </div>
+
+      <!-- End Main Content Section -->
         <div class="row">
             <div class="col-md-12">
                 <hr color="#010101">

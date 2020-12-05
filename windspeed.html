@@ -18,11 +18,11 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                           </a>
@@ -44,12 +44,23 @@
                 </nav>
             </div>
         </div>
+        <!-- Begin Main Content Section -->
+
         <div class="row">
-            <div class="col-md-12" id="main_content">
-                <img src="visualizations/windvlat.png" alt="wind vs lat visual">
-                <p>This is where the windspeed content will go</p>
+          <div class="col-md-12" id="title">
+              <br>
+              <h3>Latitude vs. Wind speed</h3>
+          </div>
+        </div>
+        <div class ="row">
+            <div class="col-md-12" id="main-content">
+                <img id="content-img" src="resources/images/windvlat.png" alt="wind vs lat visual">
+                <p class="text-md-left">This scatter plot represents the max wind speed reading for all cities queried vs. latitude.</p>
+                <p>As you can see there is no clear correlation between latitude and wind speed from this data. (Data collected on 10/30/2020)</p>
             </div>
         </div>
+
+      <!-- End Main Content Section -->
         <div class="row">
             <div class="col-md-12">
                 <hr color="#010101">
