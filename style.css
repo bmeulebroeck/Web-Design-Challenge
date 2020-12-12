@@ -2,6 +2,10 @@
     width: 1024px;
 }
 
+.navbar-expand-lg {
+    background-color: black !important;
+}
+
 h1 {
     color: darkgreen;
 }
@@ -26,4 +30,17 @@ h5 {
 
 #comp-boxes {
     text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+    .navbar-expand-lg {
+        background-color: #182596 !important
+    }
+
+    .dropdown-menu {
+        background-color: #6a9c6d
+    }
+
+
 }
